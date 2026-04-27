@@ -4,21 +4,21 @@ import React, { useEffect } from "react";
 
 const IconCheck = () => (
   <img
-    src="/images/popup/TandaCeklisBg.svg"
+    src="/images/Popup/TandaCeklisBg.svg"
     alt="check"
     className="w-12 h-12 lg:w-16 lg:h-16 object-contain"
   />
 );
 const IconWarning = () => (
   <img
-    src="/images/popup/TandaSeru.svg"
+    src="/images/Popup/TandaSeru.svg"
     alt="warning"
     className="w-12 h-12 lg:w-16 lg:h-16 object-contain"
   />
 );
 const IconQuestion = () => (
   <img
-    src="/images/popup/TandaTanya.svg"
+    src="/images/Popup/TandaTanya.svg"
     alt="question"
     className="w-12 h-12 lg:w-16 lg:h-16 object-contain"
   />
@@ -164,7 +164,7 @@ const NotifModal = ({
       {/* CARD */}
       <div className="relative bg-white rounded-lg lg:rounded-2xl shadow-xl flex flex-col items-center text-center animate-modalIn overflow-hidden w-[322px] h-[360px] lg:w-[485px] lg:h-[543px]">
         {/* CONTENT */}
-        <div className="flex-1 flex flex-col items-center justify-start pt-[37px] lg:pt-[57px] px-8 lg:px-10 w-full">
+        <div className="flex-1 flex flex-col items-center justify-start pt-[37px] lg:pt-[57px] px-7 lg:px-10 w-full">
           {/* ICON */}
           <div className="mb-3 flex items-center justify-center">
             {ICON_MAP[config.icon]}
@@ -176,12 +176,12 @@ const NotifModal = ({
           </h3>
 
           {/* PESAN ID */}
-          <p className="text-[12px] lg:text-[18px] text-[#605F5E] font-medium leading-relaxed mb-2 lg:mb-4 font-noto">
+          <p className="text-[12px] lg:text-[18px] text-[#605F5E] font-medium  mb-3 lg:mb-6 font-noto">
             {config.messageid}
           </p>
 
           {/* PESAN EG */}
-          <p className="text-[12px] lg:text-[18px] text-[#605F5E] opacity-70 leading-relaxed italic font-noto">
+          <p className="text-[12px] lg:text-[18px] text-[#605F5E] font-medium  mb-2 lg:mb-4 font-noto">
             {config.messageen}
           </p>
         </div>
@@ -199,7 +199,7 @@ const NotifModal = ({
                 className={`
     flex-1 flex items-center justify-center gap-1.5
     transition-colors duration-150
-    text-[14px] lg:text-[21px]
+    text-[14px] lg:text-[21px] text-[#605F5E] 
     font-noto
     ${btn.variant === "outline" ? "font-normal" : "font-bold"}
     ${i < config.buttons.length - 1 ? "border-r border-[#E0E0D8]" : ""}

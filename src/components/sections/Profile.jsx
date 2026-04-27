@@ -1,16 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
+import Animate from "@/components/ui/Animate";
+
 
 const Profile = () => {
   return (
-    <div className="relative w-full bg-white" style={{ minHeight: '1256px' }}>
+    <div id='profile' className="relative w-full z-20 bg-[#F0F0EF]" style={{ minHeight: '1256px' }}>
 
       {/* BG Image */}
       <Image
         src="/images/Profile/BgAbu.webp"
         alt=""
         fill
-        className="object-cover object-center z-0 opacity-70"
+        className="object-cover object-center  "
       />
 
       {/* Konten */}
@@ -24,14 +26,17 @@ const Profile = () => {
       >
 
         {/* Teks undangan atas */}
+        <Animate type="fadeup">
         <p 
           className="font-century text-center text-[14px] text-[#4E4E4E] tracking-wide"
           style={{ marginBottom: '37px' }}
         >
          We request the honour of your presence<br />at the wedding of our beloved son and<br />daughter
         </p>
+        </Animate>
 
         {/* Foto Galih */}
+        <Animate type='fadein'>
         <div 
           className="relative overflow-hidden"
           style={{ width: '204px', height: '260px', marginBottom: '35px' }}
@@ -43,8 +48,10 @@ const Profile = () => {
             className="object-cover object-top"
           />
         </div>
+        </Animate>
 
         {/* Nama Galih */}
+        <Animate type='fadeup'>
         <h2 
           className="font-wavy text-[32px] text-[#4E4E4E] text-center leading-9"
           style={{ marginBottom: '11px' }}
@@ -53,18 +60,22 @@ const Profile = () => {
           <br />
           HANDARU
         </h2>
+        </Animate>
 
         {/* Keterangan Galih */}
+        <Animate type='fadeup' >
         <p 
           className="font-century text-[14px] text-[#4E4E4E] text-center leading-relaxed"
           style={{ marginBottom: '40px' }}
         >
           The Son of
-          <span className='text-[12px] block mt-[5px]'>MR. SINUNG NUGROHO and</span>
+          <span className='text-[12px] block mt-[6px]'>MR. SINUNG NUGROHO and</span>
           <span className='text-[12px] block'>MRS. KUNTARI RETNO</span>
         </p>
+        </Animate>
 
         {/* Foto Vio */}
+        <Animate type='fadein' >
         <div 
           className="relative overflow-hidden"
           style={{ width: '204px', height: '260px', marginBottom: '35px' }}
@@ -76,8 +87,10 @@ const Profile = () => {
             className="object-cover object-top"
           />
         </div>
+        </Animate>
 
         {/* Nama Vio */}
+        <Animate type='fadeup' >
         <h2 
           className="font-creators text-[28px] text-[#4E4E4E] text-center leading-9"
           style={{ marginBottom: '9px' }}
@@ -86,23 +99,28 @@ const Profile = () => {
           <br />
           ADISTY
         </h2>
+        </Animate>
 
         {/* Keterangan Vio */}
+        <Animate type='fadeup' >
         <p 
           className="font-century text-[14px] text-[#4E4E4E] text-center leading-relaxed"
           style={{ marginBottom: '43px' }}
         >
           The Daughter of
-          <span className='text-[12px] block mt-[5px]'>MR. SUMARNO and</span>
+          <span className='text-[12px] block mt-[6px]'>MR. SUMARNO and</span>
           <span className='text-[12px] block'>MRS. CINDRA ELFIE</span>
         </p>
+        </Animate>
 
+        <Animate type='fadeup'>
         <p 
-          className="font-century text-center text-[14px] text-[#4E4E4E] leading-relaxed max-w-[260px]"
+          className="font-century text-center text-[14px] text-[#4E4E4E] leading-5 max-w-[260px]"
         >
-          Your presence and blessings
+          Your presence and blessings<br />
           would mean the world to us.
         </p>
+        </Animate>
 
       </div>
     </div>

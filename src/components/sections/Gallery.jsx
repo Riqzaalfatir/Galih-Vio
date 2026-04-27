@@ -14,6 +14,8 @@ import "yet-another-react-lightbox/styles.css"
 import "yet-another-react-lightbox/plugins/thumbnails.css"
 import "yet-another-react-lightbox/plugins/counter.css"
 
+
+
 const photos = [
   '/images/Gallery/FotoCouple1.png',
   '/images/Gallery/FotoCouple1.png',
@@ -39,12 +41,16 @@ const Gallery = () => {
   )
 
   const prev = useCallback(() => {
-    emblaApi?.scrollPrev()
-  }, [emblaApi])
+  autoplayPlugin.current.stop()
+  emblaApi?.scrollPrev()
+  autoplayPlugin.current.reset()
+}, [emblaApi])
 
-  const next = useCallback(() => {
-    emblaApi?.scrollNext()
-  }, [emblaApi])
+const next = useCallback(() => {
+  autoplayPlugin.current.stop()
+  emblaApi?.scrollNext()
+  autoplayPlugin.current.reset()
+}, [emblaApi])
 
   const handlePhotoClick = useCallback((index) => {
     scrollPosRef.current = window.scrollY
@@ -61,7 +67,7 @@ const Gallery = () => {
 
   return (
     <>
-      <section
+      <section id='gallery'
         // style={{ backgroundColor: '#4E4E4E' }}
         className="w-full flex items-center justify-center"
       >
@@ -70,6 +76,7 @@ const Gallery = () => {
           style={{ paddingTop: '45px', paddingBottom: '40px' }}
         >
           {/* Tombol Prev */}
+
           <button
             onClick={prev}
             className="absolute left-14 z-10 flex items-center justify-center"

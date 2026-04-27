@@ -46,7 +46,7 @@ const Wishes = () => {
   return (
     <>
       <section
-        className="relative w-full flex flex-col items-center px-8 bg-white z-10"
+        className="relative w-full flex flex-col items-center px-8 bg-[#F0F0EF] z-10"
         style={{
           minHeight: "808px",
           paddingTop: "80px",
@@ -82,7 +82,7 @@ const Wishes = () => {
                 ease: [0.22, 1, 0.36, 1],
                 delay: 0.2,
               }}
-              className="w-full flex flex-col gap-[17px] mt-[25px]"
+              className="w-full flex flex-col gap-[20px] mt-[25px]"
             >
               <input
                 type="text"
@@ -96,9 +96,10 @@ const Wishes = () => {
                 onChange={(e) => setPesan(e.target.value)}
                 className="w-full text-[#4E4E4E] font-century text-[12px] bg-transparent border-[0.5px] border-[#4E4E4E]/50 px-[12px] h-[60px] rounded-xl outline-none placeholder:text-[#4E4E4E]/50 resize-none"
               />
+
               <button
                 onClick={handleSubmit}
-                className="bg-[#4E4E4E] rounded-full h-[33px] text-[12px] font-century uppercase flex items-center justify-center gap-1.5 text-[#FEFBF0]"
+                className="bg-[#4E4E4E]  hover:bg-[#6B6B6B] active:bg-[#3A3A3A] transition-colors duration-200 rounded-full h-[33px] text-[12px] font-century uppercase flex items-center justify-center gap-1.5 text-[#FEFBF0]"
               >
                 <Image
                   src="/images/Wishes/Panah.svg"
@@ -179,11 +180,11 @@ const Wishes = () => {
                           className=" rounded-md overflow-hidden shadow-md bg-[#F4F8F5] flex flex-col cursor-pointer"
                         >
                           <div className="p-[10px] font-creators relative flex-1 flex flex-col justify-center">
-                            <p className="text-[22px] font-bold font-century text-slate-600 ">
+                            <p className="absolute top-[8px] left-[10px] text-[22px] font-bold font-century text-slate-600 ">
                               "
                             </p>
 
-                            <p className="font-lora text-[12px] text-[#4E4E4E] text-center mb-2 line-clamp-4">
+                            <p className="font-lora text-[12px] text-[#4E4E4E] text-center mt-6 mb-2 line-clamp-4">
                               {item.pesan}
                             </p>
                           </div>
@@ -215,7 +216,7 @@ const Wishes = () => {
                   delay: 0.2,
                 }}
                 onClick={() => setShowAll(!showAll)}
-                className="bg-[#4E4E4E] rounded-full h-[33px] text-[12px] font-century uppercase flex items-center justify-center gap-1.5 text-[#FEFBF0]">
+                className="bg-[#4E4E4E]  hover:bg-[#6B6B6B] active:bg-[#3A3A3A] transition-colors duration-200 rounded-full h-[33px] text-[12px] font-century uppercase flex items-center justify-center gap-1.5 text-[#FEFBF0]">
                 <Image
                   src="/images/Wishes/Pesan.svg"
                   alt="Kirim"

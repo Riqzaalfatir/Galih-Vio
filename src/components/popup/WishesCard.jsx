@@ -14,7 +14,7 @@ const WishesCard = ({ data, onClose }) => {
         exit={{ opacity: 0, scale: 0.85 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
         onClick={(e) => e.stopPropagation()}
-        className="bg-[#F7F8F2]/20 rounded-2xl p-6 w-[320px] md:w-[350px] h-[280px] md:h-[350px] text-center shadow-2xl border border-white/20 mb-5"
+        className="bg-white/10 rounded-2xl p-6 w-[320px] md:w-[350px] h-[280px] md:h-[350px] text-center shadow-2xl border border-white/20 mb-5"
       >
         <h3 className="text-[25px] md:text-[28px] text-white font-semibold tracking-wide leading-snug font-lora">
           {data.nama}
@@ -26,7 +26,7 @@ const WishesCard = ({ data, onClose }) => {
       </motion.div>
       <button
         onClick={onClose}
-        className="w-[320px] md:w-[350px] bg-[#4E4E4E] transition-all text-white px-6 py-2 rounded-xl text-[14px] font-sweetsans font-lora tracking-widest hover:opacity-90"
+        className="w-[320px] md:w-[350px] bg-[#4E4E4E]  hover:bg-[#6B6B6B] active:bg-[#3A3A3A] transition-colors duration-200 transition-all text-white px-6 py-2 rounded-xl text-[14px] font-sweetsans font-lora tracking-widest hover:opacity-90"
       >
         BACK
       </button>

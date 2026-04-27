@@ -9,12 +9,12 @@ const Header = () => {
 
   const linkMenu = [
     { name: "HOME", link: "#hero" },
-    { name: "PROFILE", link: "#hero" },
-    { name: "OUR STORY", link: "#tanggal" },
-    { name: "TIME & LOCATION", link: "#rsvp" },
-    { name: "RSVP", link: "#galleri" },
+    { name: "PROFILE", link: "#profile" },
+    { name: "OUR STORY", link: "#ourstory" },
+    { name: "TIME & LOCATION", link: "#time" },
+    { name: "RSVP", link: "#rsvp" },
     { name: "GALLERY", link: "#galleri" },
-    { name: "WEDDING GIFT", link: "#galleri" },
+    { name: "WEDDING GIFT", link: "#gift" },
   ];
 
   const container = {
@@ -58,7 +58,7 @@ const Header = () => {
           whileTap={{ scale: 0.92 }}
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 250, damping: 20 }}
-          className="text-[#C3C3C3] text-[28px] lg:text-[30px]"
+          className="text-[#C3C3C3] text-[28px]"
         >
           <FiMenu />
         </motion.button>
@@ -76,7 +76,7 @@ const Header = () => {
             }}
             transition={{ type: "spring", stiffness: 260, damping: 20 }}
             style={{ originX: 0, originY: 0 }}
-            className="absolute top-[12px] left-[18px] lg:top-5 lg:left-5 bg-[#7B7B7B]/70 py-4 px-5 lg:py-6 lg:px-7 text-white w-[255px] lg:w-[424px]"
+            className="absolute top-[12px] left-[18px]  bg-[#7B7B7B]/70 py-4 px-5  text-white w-[255px]"
           >
 
             {/* CLOSE X */}
@@ -86,9 +86,9 @@ const Header = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="absolute top-[-12px] left-[6px] lg:top-[-2px] lg:left-[2px]"
+              className="absolute top-[-12px] left-[6px] "
             >
-              <p className="text-[32px] lg:text-[48px] text-white font-ibm">
+              <p className="text-[32px] text-white font-ibm">
                 x
               </p>
             </motion.button>
@@ -98,7 +98,7 @@ const Header = () => {
               variants={container}
               initial="hidden"
               animate="show"
-              className="pt-4 lg:pt-8 pl-2 lg:pl-4 space-y-1 lg:space-y-3 text-[12px] lg:text-[14px] font-noto tracking-[0.2em] text-white font-medium flex flex-col"
+              className="pt-3.5 pl-3 space-y-1 text-[12px] font-noto tracking-[0.2em] text-white font-medium flex flex-col"
             >
               {linkMenu.map((menu) => (
                 <motion.a
@@ -116,7 +116,7 @@ const Header = () => {
                   </span>
 
                   {/* TEXT */}
-                  <span className="transition-all duration-300 ease-out group-hover:translate-x-[18px] lg:group-hover:translate-x-[20px]">
+                  <span className="transition-all duration-300 ease-out group-hover:translate-x-[18px]">
                     {menu.name}
                   </span>
                 </motion.a>
@@ -128,7 +128,7 @@ const Header = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.6, ease: "easeOut" }}
-              className="pt-[17px] lg:pt-10 pl-2 lg:pl-4 text-[10px] lg:text-[12px] font-sans font-light pb-2 lg:pb-3"
+              className="pt-[17px] pl-3 text-[8px] font-sans font-light pb-2 tracking-wide "
             >
               Select a section above to continue
             </motion.p>

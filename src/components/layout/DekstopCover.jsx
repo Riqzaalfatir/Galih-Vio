@@ -1,10 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
+import Animate from "@/components/ui/Animate";
+
 
 const DesktopCover = () => {
   return (
     <div className="relative w-full overflow-hidden"     
-    style={{ minHeight: '1100px', height: '100dvh' }}
+    style={{ minHeight: '1020px', height: '100dvh' }}
 
 >
       
@@ -18,20 +20,29 @@ const DesktopCover = () => {
       />
 
       {/* Teks di bawah — pakai flex agar posisi relatif terhadap container */}
-      <div className="absolute inset-0 flex flex-col justify-end items-center text-white text-center px-10 pb-[5%]">
+      <div className="absolute inset-0 flex flex-col justify-end items-center text-white text-center px-10 pb-[5%] tracking-wide">
         {/* pb-[5%] → relatif terhadap lebar, tidak berubah saat zoom */}
+
+        <Animate type='fadeup'>
         
         <p className="font-century text-[20px] text-white uppercase">
           The Wedding of
         </p>
+        </Animate>
+
+        <Animate type='fadeup'>
         <h1 className="font-wavy text-[64px] uppercase">
           Galih & Vio
         </h1>
-        <p className="font-century text-[20px]">
+        </Animate>
+
+        <Animate type='fadeup'>
+        <p className="font-century text-[20px] leading-6">
           Saturday · Sunday,
           <br />
           9 · 10 May 2026
         </p>
+        </Animate>
       </div>
     </div>
   )
