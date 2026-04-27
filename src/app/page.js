@@ -1,65 +1,58 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// app/page.jsx
+"use client";
+
+import { useState } from "react";
+import DekstopCover from "@/components/layout/DekstopCover";
+import Header from "@/components/layout/Header";
+import VideoBackground from "@/components/layout/VideoBackground";
+import Hero from "@/components/sections/Hero";
+import Profile from "@/components/sections/Profile";
+import OurStory from "@/components/sections/OurStory";
+import TimeLocation from "@/components/sections/TimeLocation";
+import Gallery from "@/components/sections/Gallery";
+import Rsvp from "@/components/sections/Rsvp";
+import WeddingGift from "@/components/sections/WeddingGift";
+import Wishes from "@/components/sections/Wishes";
+import ThankYou from "@/components/sections/ThankYou";
+import Opening from "@/components/popup/Opening";
 
 export default function Home() {
+  const [start, setStart] = useState(false);
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="desktop-layout">
+      <Opening setStart={setStart} namaTamu="Sela" />
+
+      <aside className="cover-panel">
+        <DekstopCover />
+      </aside>
+
+      <main className="sections-panel relative">
+        <Header />
+
+        {/*
+          VIDEO LAYER — sticky, tidak mendorong konten
+          -mb-[100vh] membuat elemen berikutnya overlap di atas video
+        */}
+        <VideoBackground start={start} />
+
+        {/* ── HERO: teks di atas video, h-screen ── */}
+        <Hero />
+
+        {/* ── PROFILE: bg solid → video tertutup ── */}
+        <Profile />
+
+        {/* ── VIDEO SECTIONS: bg transparan → video terlihat ── */}
+        <OurStory />
+        <TimeLocation />
+                <Rsvp />
+
+        <Gallery />
+
+        {/* ── SOLID SECTIONS: bg sendiri → video tertutup ── */}
+        <WeddingGift />
+        <Wishes />
+        <ThankYou />
       </main>
     </div>
   );
