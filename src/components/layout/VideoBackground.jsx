@@ -22,7 +22,7 @@ const VideoBackground = ({ start }) => {
       <video
         ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover object-center scale-105"
-        muted
+        // muted
         loop
         playsInline
       >

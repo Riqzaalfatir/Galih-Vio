@@ -82,19 +82,26 @@ a {
 /* Desktop */
 @media (min-width: 1024px) {
   .desktop-layout {
-    display: grid;
-    grid-template-columns: 1fr 435px; /* kiri fleksibel, kanan fix 435px */
-    height: 100dvh;
-    overflow: hidden;
-  }
+  display: grid;
+  grid-template-columns: 1fr 435px;
+  height: 100dvh;
+  overflow-x: hidden;      /* ← bukan overflow: hidden */
+  /* hapus overflow: hidden */
+}
 
-  .cover-panel {
-    display: block;
-    position: sticky;
-    top: 0;
-    height: 100dvh;
-    overflow: hidden;
-  }
+ .cover-panel {
+  display: block;
+  min-height: 100dvh;      /* ← min-height bukan height */
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.cover-panel::-webkit-scrollbar {
+  display: none;
+}
+
+ 
 
   .sections-panel {
     width: 435px;
@@ -108,3 +115,4 @@ a {
 .section-dark {
   background-color: #4E4E4E;
 }
+

@@ -31,7 +31,7 @@ const Opening = ({ setStart, namaTamu = "Sela" }) => {
           className="fixed inset-0 z-[100] flex justify-center items-center px-4"
         >
           <Image
-            src="/images/Cover/FotoCoupleMobil.webp"
+            src="/images/Popup/FotoPopup.webp"
             alt="Galih & Vio Wedding Cover"
             fill
             priority

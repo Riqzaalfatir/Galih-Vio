@@ -27,7 +27,7 @@ const Rsvp = () => {
 
   return (
     <>
-      <div className="relative w-full bg-white" style={{ minHeight: '695px' }}>
+      <div className="relative w-full bg-white">
 
         {/* BG Image */}
         <Image
@@ -48,8 +48,8 @@ const Rsvp = () => {
         >
           <div className="flex flex-col items-center justify-center text-center">
             <h1 className='font-wavy text-[24px] text-[#4E4E4E]'>Rsvp</h1>
-            <p className='font-century text-[12px] text-[#4E4E4E] mt-[42px]'>Dear</p>
-            <p className='font-century text-[14px] text-[#4E4E4E] mt-[26px]'>Sela</p>
+            <p className='font-century text-[12px] text-[#4E4E4E] mt-[32px]'>Dear</p>
+            <p className='font-century text-[14px] text-[#4E4E4E] mt-[16px]'>Sela</p>
             <p className='font-century text-[14px] text-[#4E4E4E] mt-[24px] tracking-wide'>
               Kindly confirm your attendance before<br />16 May 2026
             </p>
