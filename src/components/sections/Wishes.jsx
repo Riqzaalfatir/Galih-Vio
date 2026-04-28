@@ -216,7 +216,8 @@ const Wishes = () => {
                   delay: 0.2,
                 }}
                 onClick={() => setShowAll(!showAll)}
-                className="bg-[#4E4E4E]  hover:bg-[#6B6B6B] active:bg-[#3A3A3A] transition-colors duration-200 rounded-full h-[33px] text-[12px] font-century uppercase flex items-center justify-center gap-1.5 text-[#FEFBF0]">
+                className="bg-[#4E4E4E]  hover:bg-[#6B6B6B] active:bg-[#3A3A3A] transition-colors duration-200 rounded-full h-[33px] text-[12px] font-century uppercase flex items-center justify-center gap-1.5 text-[#FEFBF0]"
+              >
                 <Image
                   src="/images/Wishes/Pesan.svg"
                   alt="Kirim"
@@ -252,7 +253,6 @@ const Wishes = () => {
           </div>
         )}
       </section>
-
     </>
   );
 };

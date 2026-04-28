@@ -1,4 +1,3 @@
-// app/page.jsx
 "use client";
 
 import { useState } from "react";
@@ -30,26 +29,18 @@ export default function Home() {
       <main className="sections-panel relative">
         <Header />
 
-        {/*
-          VIDEO LAYER — sticky, tidak mendorong konten
-          -mb-[100vh] membuat elemen berikutnya overlap di atas video
-        */}
         <VideoBackground start={start} />
 
-        {/* ── HERO: teks di atas video, h-screen ── */}
         <Hero />
 
-        {/* ── PROFILE: bg solid → video tertutup ── */}
         <Profile />
 
-        {/* ── VIDEO SECTIONS: bg transparan → video terlihat ── */}
         <OurStory />
         <TimeLocation />
-                <Rsvp />
+        <Rsvp />
 
         <Gallery />
 
-        {/* ── SOLID SECTIONS: bg sendiri → video tertutup ── */}
         <WeddingGift />
         <Wishes />
         <ThankYou />

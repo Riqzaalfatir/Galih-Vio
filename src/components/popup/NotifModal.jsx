@@ -9,6 +9,7 @@ const IconCheck = () => (
     className="w-12 h-12 lg:w-16 lg:h-16 object-contain"
   />
 );
+
 const IconWarning = () => (
   <img
     src="/images/Popup/TandaSeru.svg"
@@ -16,6 +17,7 @@ const IconWarning = () => (
     className="w-12 h-12 lg:w-16 lg:h-16 object-contain"
   />
 );
+
 const IconQuestion = () => (
   <img
     src="/images/Popup/TandaTanya.svg"
@@ -175,7 +177,7 @@ const NotifModal = ({
             {config.title}
           </h3>
 
-          {/* PESAN ID */}
+          {/* PESAN */}
           <p className="text-[12px] lg:text-[18px] text-[#605F5E] font-medium  mb-3 lg:mb-6 font-noto">
             {config.messageid}
           </p>

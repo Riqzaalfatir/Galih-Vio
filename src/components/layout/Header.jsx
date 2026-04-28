@@ -46,11 +46,11 @@ const Header = () => {
   };
 
   return (
-   <div
-  className="fixed top-0 left-0 w-full z-50 px-4 py-3 lg:left-auto lg:right-0 lg:w-[435px] lg:px-5 lg:py-4"
-  style={{ willChange: "transform", transform: "translateZ(0)" }}
->
-
+    <div
+      className="fixed top-0 left-0 w-full z-50 px-4 py-3 lg:left-auto lg:right-0 lg:w-[435px] lg:px-5 lg:py-4"
+      style={{ willChange: "transform", transform: "translateZ(0)" }}
+    >
+      
       {/* HAMBURGER */}
       {!open && (
         <motion.button
@@ -78,7 +78,6 @@ const Header = () => {
             style={{ originX: 0, originY: 0 }}
             className="absolute top-[12px] left-[18px]  bg-[#7B7B7B]/70 py-4 px-5  text-white w-[255px]"
           >
-
             {/* CLOSE X */}
             <motion.button
               onClick={() => setOpen(false)}
@@ -88,9 +87,7 @@ const Header = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               className="absolute top-[-12px] left-[6px] "
             >
-              <p className="text-[32px] text-white font-ibm">
-                x
-              </p>
+              <p className="text-[32px] text-white font-ibm">x</p>
             </motion.button>
 
             {/* MENU */}

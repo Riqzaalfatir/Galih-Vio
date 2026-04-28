@@ -1,5 +1,3 @@
-// data/wishes.js
-
 export const dummyPesan = [
   {
     id: 1,

@@ -1,8 +1,8 @@
-"use client"
-import { motion } from "framer-motion"
+"use client";
+import { motion } from "framer-motion";
 
 const WishesCard = ({ data, onClose }) => {
-  if (!data) return null
+  if (!data) return null;
   return (
     <div
       onClick={onClose}
@@ -31,7 +31,7 @@ const WishesCard = ({ data, onClose }) => {
         BACK
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default WishesCard
+export default WishesCard;
