@@ -89,12 +89,12 @@ const Wishes = () => {
                 value={nama}
                 placeholder="Desy (Tester)"
                 onChange={(e) => setNama(e.target.value)}
-                className="w-full text-[#4E4E4E] font-century text-[12px] bg-transparent  border-[#4E4E4E]/50 px-[12px] h-[33px] rounded-full outline-none placeholder:text-[#4E4E4E]/50"
+                className="w-full text-[#4E4E4E] font-century border-[1px] text-[12px] bg-transparent  border-[#4E4E4E]/50 px-[12px] h-[33px] rounded-full outline-none placeholder:text-[#4E4E4E]/50"
               />
               <textarea
                 value={pesan}
                 onChange={(e) => setPesan(e.target.value)}
-                className="w-full text-[#4E4E4E] font-century text-[12px] bg-transparent  border-[#4E4E4E]/50 px-[12px] h-[60px] rounded-xl outline-none placeholder:text-[#4E4E4E]/50 resize-none"
+                className="w-full text-[#4E4E4E] font-century border-[1px] text-[12px] bg-transparent  border-[#4E4E4E]/50 px-[12px] h-[60px] rounded-xl outline-none placeholder:text-[#4E4E4E]/50 resize-none"
               />
 
               <button
