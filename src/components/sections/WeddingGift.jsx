@@ -7,8 +7,8 @@ import Animate from "@/components/ui/Animate";
 const gifts = [
   {
     bank: 'BCA',
-    number: '1234567891011',
-    name: 'PROVITE',
+    number: '3780016361',
+    name: 'Noviola Ruth Adisty',
   },
   // Tambah rekening lain di sini kalau ada
   // { bank: 'MANDIRI', number: '9876543210', name: 'PROVITE' },

@@ -38,8 +38,8 @@ const Profile = () => {
         {/* Foto Galih */}
         <Animate type='fadein'>
         <div 
-          className="relative overflow-hidden"
-          style={{ width: '200px', height: '260px', marginBottom: '40px' }}
+          className="relative overflow-hidden w-[200px] md:w-[204px]"
+          style={{ height: '260px', marginBottom: '40px' }}
         >
           <Image
             src="/images/Profile/FotoGalihHD.webp"
@@ -77,8 +77,8 @@ const Profile = () => {
         {/* Foto Vio */}
         <Animate type='fadein' >
         <div 
-          className="relative overflow-hidden"
-          style={{ width: '200px', height: '260px', marginBottom: '40px' }}
+          className="relative overflow-hidden w-[200px] md:w-[204px]"
+          style={{ height: '260px', marginBottom: '40px' }}
         >
           <Image
             src="/images/Profile/FotoVioHD2.webp"
