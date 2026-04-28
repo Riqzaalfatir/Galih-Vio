@@ -79,7 +79,7 @@ const next = useCallback(() => {
 
           <button
             onClick={prev}
-            className="absolute left-14 md:left-60 lg:left-14 z-10 flex items-center justify-center"
+            className="absolute left-10 md:left-60 lg:left-14 z-10 flex items-center justify-center"
             style={{ top: '45px', bottom: '40px', width: '42px' }}
             aria-label="Previous"
           >
@@ -115,7 +115,7 @@ const next = useCallback(() => {
           {/* Tombol Next */}
           <button
             onClick={next}
-            className="absolute right-14 md:right-60 lg:right-14 z-10 flex items-center justify-center"
+            className="absolute right-10 md:right-60 lg:right-14 z-10 flex items-center justify-center"
             style={{ top: '45px', bottom: '40px', width: '42px' }}
             aria-label="Next"
           >
