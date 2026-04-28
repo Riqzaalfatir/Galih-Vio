@@ -13,10 +13,10 @@ const ThankYou = () => {
       <img
         src="/images/ThankYou/FotoCouple.webp"
         alt="background"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-[50%_60%]"
       />
 
-       <div className="relative z-10 flex flex-col items-center text-center px-8 text-white mt-[50px] leading-none">
+       <div className="relative z-10 flex flex-col items-center text-center px-8 text-white mt-[85px] leading-none">
         <Animate type='fadeup'>
          <h1 className='font-wavy text-[40px] text-[#4E4E4E]'>Thank You</h1>
          </Animate>
@@ -31,7 +31,7 @@ const ThankYou = () => {
        </div>
 
        {/* Logo bawah */}
-<div className="absolute bottom-6 z-10 flex items-center">
+<div className="absolute bottom-[23px] z-10 flex items-center">
   <Animate type='fadein'>
   <Image
     src="/images/ThankYou/LogoProvite.svg"

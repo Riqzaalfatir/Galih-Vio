@@ -39,7 +39,7 @@ const Profile = () => {
         <Animate type='fadein'>
         <div 
           className="relative overflow-hidden"
-          style={{ width: '204px', height: '260px', marginBottom: '35px' }}
+          style={{ width: '204px', height: '260px', marginBottom: '40px' }}
         >
           <Image
             src="/images/Profile/FotoGalihHD.webp"
@@ -54,7 +54,7 @@ const Profile = () => {
         <Animate type='fadeup'>
         <h2 
           className="font-wavy text-[32px] text-[#4E4E4E] text-center leading-9"
-          style={{ marginBottom: '11px' }}
+          style={{ marginBottom: '16px' }}
         >
           GALIH YOGI
           <br />
@@ -78,7 +78,7 @@ const Profile = () => {
         <Animate type='fadein' >
         <div 
           className="relative overflow-hidden"
-          style={{ width: '204px', height: '260px', marginBottom: '35px' }}
+          style={{ width: '204px', height: '260px', marginBottom: '40px' }}
         >
           <Image
             src="/images/Profile/FotoVioHD.webp"
@@ -93,7 +93,7 @@ const Profile = () => {
         <Animate type='fadeup' >
         <h2 
           className="font-creators text-[28px] text-[#4E4E4E] text-center leading-9"
-          style={{ marginBottom: '9px' }}
+          style={{ marginBottom: '14px' }}
         >
           NOVIOLA RUTH
           <br />

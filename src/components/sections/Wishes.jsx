@@ -133,7 +133,7 @@ const Wishes = () => {
                     <div className="sticky top-0 w-full h-[18px] bg-[#4E4E4E] z-10" />
 
                     {/* ISI */}
-                    <div className="px-[15px]">
+                    <div className="px-[15px] py-[2px]">
                       {pesanList.slice(0, 8).map((item, index, array) => (
                         <div key={item.id}>
                           <p className="text-[#DADAD9] font-century text-[13px] mb-[3px]">
@@ -150,7 +150,7 @@ const Wishes = () => {
                     </div>
 
                     {/* BOTTOM PENUTUP */}
-                    {/* <div className="sticky bottom-0 w-full h-[0.5vw] lg:h-[2vw] bg-[#6C7852] z-10" /> */}
+                    <div className="sticky bottom-0 w-full h-[18px] bg-[#4E4E4E] z-10" />
                   </div>
                 ) : (
                   <div className="w-full">
