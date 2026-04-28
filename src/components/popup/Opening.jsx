@@ -49,7 +49,7 @@ const Opening = ({ setStart, namaTamu = "Sela" }) => {
               duration: 0.8,
               ease: [0.4, 0, 0.2, 1],
             }}
-            className="relative bg-[#4E4E4E] rounded-xl md:rounded-2xl overflow-hidden w-[290px] h-[435px] md:w-[416px] md:h-[540px] shadow-xl flex flex-col z-[100]"
+            className="relative bg-[#4E4E4E] rounded-xl md:rounded-2xl overflow-hidden w-[290px] h-[435px] md:w-[416px] md:h-[500px] lg:h-[540px] shadow-xl flex flex-col z-[100]"
           >
             {/* FOTO */}
             <div className="relative w-full h-[180px] md:h-[220px] overflow-hidden z-10">
@@ -66,16 +66,16 @@ const Opening = ({ setStart, namaTamu = "Sela" }) => {
               <p className="text-[12px] md:text-[14px] text-[#DADAD9] font-century tracking-wide">
                 THE WEDDING OF
               </p>
-              <h1 className="text-[36px] lg:text-[48px] text-[#DADAD9] pt-[8px] lg:pt-[12px] font-wavy">
+              <h1 className="text-[36px] lg:text-[48px] text-[#DADAD9] pt-[8px] md:pt-[12px] font-wavy">
                 GALIH & VIO
               </h1>
-              <p className="text-[10px] lg:text-[14px] text-[#DADAD9] font-lora font-medium pt-[18.5px] lg:pt-[19px]">
+              <p className="text-[10px] lg:text-[14px] text-[#DADAD9] font-lora font-medium pt-[18.5px] md:pt-[19px]">
                 Dear Mr. / Mrs. / Ms.
               </p>
-              <p className="text-[12px] lg:text-[18px] text-[#DADAD9] font-lora lg:font-century pt-[13.5px] lg:pt-[17px]">
+              <p className="text-[12px] lg:text-[18px] text-[#DADAD9] font-lora lg:font-century pt-[13.5px] md:pt-[17px]">
                 {namaTamu}
               </p>
-              <p className="text-[9px] lg:text-[12px] text-[#DADAD9] font-century leading-[1.2]  pt-[17px] lg:pt-[23px] tracking-wide">
+              <p className="text-[9px] lg:text-[12px] text-[#DADAD9] font-century leading-[1.2]  pt-[17px] md:pt-[23px] tracking-wide">
                 We sincerely apologize
                 <br />
                 for any misspelling of names or titles.
@@ -84,7 +84,7 @@ const Opening = ({ setStart, namaTamu = "Sela" }) => {
               {/* BUTTON OPENING */}
               <button
                 onClick={handleOpen}
-                className="bg-[#DADAD9] flex items-center justify-center text-[#4E4E4E] w-[184px] h-[33px] md:w-[220px] md:h-[40px] rounded-full uppercase font-century text-[12px] lg:text-[18px] mt-[14px] lg:mt-[15px]"
+                className="bg-[#DADAD9] flex items-center justify-center text-[#4E4E4E] w-[184px] h-[33px] md:w-[220px] md:h-[40px] rounded-full uppercase font-century text-[12px] lg:text-[18px] mt-[14px] md:mt-[15px]"
               >
                 <span>VIEW Invitation</span>
               </button>

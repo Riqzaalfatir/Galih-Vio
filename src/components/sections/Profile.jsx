@@ -39,7 +39,7 @@ const Profile = () => {
         <Animate type='fadein'>
         <div 
           className="relative overflow-hidden"
-          style={{ width: '204px', height: '260px', marginBottom: '40px' }}
+          style={{ width: '200px', height: '260px', marginBottom: '40px' }}
         >
           <Image
             src="/images/Profile/FotoGalihHD.webp"
@@ -78,10 +78,10 @@ const Profile = () => {
         <Animate type='fadein' >
         <div 
           className="relative overflow-hidden"
-          style={{ width: '204px', height: '260px', marginBottom: '40px' }}
+          style={{ width: '200px', height: '260px', marginBottom: '40px' }}
         >
           <Image
-            src="/images/Profile/FotoVioHD.webp"
+            src="/images/Profile/FotoVioHD2.webp"
             alt="Noviola Ruth Adisty"
             fill
             className="object-cover object-top"
@@ -92,7 +92,7 @@ const Profile = () => {
         {/* Nama Vio */}
         <Animate type='fadeup' >
         <h2 
-          className="font-creators text-[28px] text-[#4E4E4E] text-center leading-9"
+          className="font-wavy text-[32px] text-[#4E4E4E] text-center leading-9"
           style={{ marginBottom: '14px' }}
         >
           NOVIOLA RUTH
